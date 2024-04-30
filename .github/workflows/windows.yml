@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-2022]
-        configuration: [RiotGamesServers, ChinaServer]
+        configuration: [ChinaServer]
     steps:
     - uses: actions/checkout@v3.5.2
     - name: Add msbuild to PATH
@@ -16,3 +16,10 @@ jobs:
     - name: Build
       shell: cmd
       run: msbuild R3nzSkin/R3nzSkin.vcxproj /p:Platform=x64 /p:Configuration=${{ matrix.configuration }}
+    - name: Release
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        automatic_release_tag: "latest"
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        prerelease: false
+        files: R3nzSkin/Release/ChinaServer/*
