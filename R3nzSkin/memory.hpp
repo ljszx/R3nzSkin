@@ -125,7 +125,7 @@ private:
 		},
 		{
 			{
-				"E8 ? ? ? ? 4C 3B F8 0F 94 C0"
+				"E8 ? ? ? ? 4C 3B F0 0F 94 C0"
 			}, true, false, false, 0, &offsets::functions::GetGoldRedirectTarget
 		}
 	};
