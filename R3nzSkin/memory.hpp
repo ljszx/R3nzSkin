@@ -95,7 +95,7 @@ private:
 		},
 		{
 			{
-				"38 9F ? ? 00 00 75 4B 66 C7 87 ? ? ? ? 00 04 0F 31 48 C1 E2 20 48 0B C2 88 87 ? ? 00 00 48 89 44 24 38 0F B6 44 24 39 88 87 1D 13"
+				"38 9F ? ? 00 00 75 4B 66 C7 87 ? ? ? ? 00 04 0F 31 48 C1 E2 20 48 0B C2 88 87 ? ? 00 00 48 89 44 24 38 0F B6 44 24 39 88 87 ? 13"
 			}, false, true, false, 0, &offsets::AIBaseCommon::SkinId
 		},
 		{
@@ -115,7 +115,7 @@ private:
 		},
 		{
 			{
-				"E8 ? ? ? ? 8B 57 44"
+				"E8 ? ? ? ? 8B 57 34"
 			}, true, false, false, 0, &offsets::functions::Riot__Renderer__MaterialRegistry__GetSingletonPtr
 		},
 		{
@@ -125,7 +125,7 @@ private:
 		},
 		{
 			{
-				"E8 ? ? ? ? 4C 3B F0 0F 94 C0"
+				"E8 ? ? ? ? 4C 3B ? 0F 94 C0"
 			}, true, false, false, 0, &offsets::functions::GetGoldRedirectTarget
 		}
 	};
