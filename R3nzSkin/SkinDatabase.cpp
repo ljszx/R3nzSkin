@@ -59,7 +59,7 @@ void SkinDatabase::load() noexcept
 		const auto ward_display_name{ "game_character_skin_displayname_SightWard_" + std::to_string(ward_skin_id) };
 		const auto ward_display_name_translated{ cheatManager.memory->translateString(ward_display_name.c_str()) };
 		
-		if (ward_display_name == ward_display_name_translated)
+		if (ward_display_name_translated == nullptr || ward_display_name_translated[0] == '\0')
 			break;
 
 		this->wards_skins.emplace_back(ward_skin_id, ward_display_name_translated);
