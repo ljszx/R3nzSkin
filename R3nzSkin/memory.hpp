@@ -90,7 +90,7 @@ private:
 		},
 		{
 			{
-				"48 8D 8D ? ? 00 00 44 8B 8C 24 ? ? 00 00"
+				"49 8D 8D ? ? 00 00 44 8B 8C 24 ? ? 00 00"
 			}, false, true, false, 0, &offsets::AIBaseCommon::CharacterDataStack
 		},
 		{
@@ -105,7 +105,7 @@ private:
 		},
 		{
 			{
-				"E8 ? ? ? ? 48 8D 8D ? ? 00 00 E8 ? ? ? ? 48 85 C0 74 ? 48 85 ED"
+				"E8 ? ? ? ? 49 8D 8D ? ? 00 00 E8 ? ? ? ? 48 85 C0 74 ? 4D 85 ED"
 			}, true, false, false, 0, &offsets::functions::CharacterDataStack__Push
 		},
 		{
